@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vistavie",
+  "version": "0.1.0",
+  "description": "비따비의 VIEW MCP 연결과 사내 AI 스킬을 제공하는 플러그인",
+  "author": {
+    "name": "VIS TA VIE"
+  }
+}

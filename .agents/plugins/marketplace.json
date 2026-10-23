@@ -1,0 +1,17 @@
+{
+  "name": "vistavie",
+  "plugins": [
+    {
+      "name": "vistavie",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vistavie"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
