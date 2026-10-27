@@ -4,6 +4,10 @@
     "view": {
       "type": "streamable-http",
       "url": "https://view.vistavie.app/api/mcp"
+    },
+    "home": {
+      "type": "streamable-http",
+      "url": "https://vistavielab.com/api/mcp"
     }
   }
 }
