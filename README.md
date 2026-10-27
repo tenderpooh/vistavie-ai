@@ -51,7 +51,12 @@ AI에게 “VIEW에서 내가 접근할 수 있는 프로젝트 목록을 확인
 
 ## MCP 설정 관리
 
-서버 식별자는 `view`, 운영 주소는 `https://view.vistavie.app/api/mcp`입니다. 자격 증명은 배포 파일에 넣지 않고 사용자별 OAuth로 처리합니다.
+| 식별자 | 서버 | 운영 주소 |
+| --- | --- | --- |
+| `view` | VIEW 업무 기록 | `https://view.vistavie.app/api/mcp` |
+| `home` | 비따비 홈페이지(v-home)의 Blog 글·대표작·About | `https://vistavielab.com/api/mcp` |
+
+자격 증명은 배포 파일에 넣지 않고 사용자별 OAuth로 처리합니다. `home`은 홈페이지 관리자로 등록된 계정만 로그인할 수 있으며, 그 밖의 사용자는 인증 단계에서 막힙니다. 할 수 있는 일과 연결 끊기는 v-home의 `docs/운영-설정.md`를 따릅니다.
 
 Codex 표준 설정은 `mcp.json`의 `streamable-http`, Claude Code 설정은 `.mcp.json`의 `http`를 사용합니다. 두 파일은 같은 서버를 가리키므로 주소를 바꿀 때 함께 수정합니다. 플러그인 이름과 버전도 두 `plugin.json` 파일에서 맞춥니다.
 

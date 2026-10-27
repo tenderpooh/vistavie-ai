@@ -3,6 +3,10 @@
     "view": {
       "type": "http",
       "url": "https://view.vistavie.app/api/mcp"
+    },
+    "home": {
+      "type": "http",
+      "url": "https://vistavielab.com/api/mcp"
     }
   }
 }
