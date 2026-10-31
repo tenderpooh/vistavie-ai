@@ -1,8 +1,14 @@
 # Issue tracker: VIEW
 
-**This repo's issue tracker is VIEW** (configured by `setup-view`). Issues, specs, triage state and wayfinding maps live in the VIEW project below, not in GitHub Issues.
+**This repo's issue tracker is VIEW** (configured by `setup-view`). Issues, specs, triage state and wayfinding maps live in the VIEW projects listed in the agent instructions, not in GitHub Issues.
 
-이 저장소의 과업과 스펙은 VIEW 프로젝트 `<슬러그>`의 항목이다. VIEW MCP 도구(`view_*`)로 다룬다. 항목은 ref `<슬러그>#<번호>`로 가리킨다.
+이 저장소의 과업과 스펙은 VIEW 프로젝트의 항목이다. 연결된 프로젝트 목록과 기본 프로젝트는 에이전트 지침 파일(`CLAUDE.md` 또는 `AGENTS.md`)의 `## VIEW` 절 표에 있다. VIEW MCP 도구(`view_*`)로 다룬다. 항목은 ref `<슬러그>#<번호>`로 가리킨다. 이 파일의 `<슬러그>`는 그 일이 속한 프로젝트의 슬러그다.
+
+## 프로젝트 고르기
+
+- 새 과업·문서는 표의 "다루는 일"에 맞는 프로젝트에 만든다. 하나로 정해지지 않으면 사용자에게 묻는다.
+- 기존 항목에 딸린 것(하위 과업, 선행 과업, 지도의 티켓)은 따로 말이 없으면 그 항목의 프로젝트에 만든다.
+- 찾거나 목록을 볼 때 프로젝트를 모르면 표의 프로젝트를 모두 본다(`project_slug IN (...)`).
 
 ## Conventions
 
@@ -17,7 +23,8 @@
 ## Refs
 
 - 쓸 때(커밋, PR, 과업 본문, 댓글)는 항상 `<슬러그>#<번호>` 전체 ref로 쓴다. GitHub에서 `#12`만 쓰면 이 저장소의 GitHub 이슈·PR로 연결된다.
-- 사용자가 `#12`만 말하면 `<슬러그>#12`로 읽는다.
+- 사람이 읽는 곳(사용자에게 하는 답, PR 본문)에서는 ref 뒤에 항목 제목을, 프로젝트 이름 뒤에 슬러그를 함께 쓴다. 예: `brand-renewal#12` 로그인 오류 수정, 브랜드 리뉴얼(`brand-renewal`). 커밋 메시지, 과업 본문, 댓글에는 ref만 쓴다. 제목은 바뀔 수 있고 커밋 첫 줄이 길어지기 때문이다.
+- 사용자가 `#12`만 말하면 기본 프로젝트의 항목으로 읽는다. 대화가 다른 프로젝트의 항목을 다루던 중이라 헷갈리면 어느 쪽인지 묻는다.
 
 ## Pull requests as a triage surface
 
@@ -40,7 +47,7 @@ PR 머지가 VIEW 과업을 닫지 않는다. 일이 끝나면 **닫기**대로 
 VIEW는 저장소 지침이 정한 절차 안의 쓰기를 사용자 지시로 본다. 이 파일이 정하는 범위는 다음과 같다.
 
 - **지시로 본다**: 사용자가 실행한 스킬의 절차가 요구하는 쓰기. 과업·문서 만들기, 분류·과업 유형 바꾸기, 댓글, 상위·선행 관계, 맡기, 닫기, 지도 문서 본문 갱신.
-- **제안만 한다**: 기한·담당자 바꾸기, `<슬러그>`가 아닌 프로젝트에 쓰기, 다른 사람이 쓴 본문 고치기. 답변에 제안으로 적고 사용자가 지시하면 실행한다.
+- **제안만 한다**: 기한·담당자 바꾸기, `## VIEW` 표에 없는 프로젝트에 쓰기, 다른 사람이 쓴 본문 고치기. 답변에 제안으로 적고 사용자가 지시하면 실행한다.
 
 ## Wayfinding operations
 
