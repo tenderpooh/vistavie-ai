@@ -2,7 +2,7 @@
 
 비따비의 VIEW MCP 연결과 공통 업무 스킬을 묶는 플러그인입니다.
 
-현재 배포에는 VIEW 서버 연결 설정과 스킬을 추가할 폴더가 포함됩니다. 실행 가능한 업무 스킬은 아직 들어 있지 않습니다. Codex는 `plugin.json`과 `mcp.json`을, Claude Code는 `.claude-plugin/plugin.json`과 `.mcp.json`을 사용합니다. 두 클라이언트의 스킬 원본은 `skills/`에서 함께 관리합니다.
+현재 배포에는 VIEW·홈페이지 서버 연결 설정과 `setup-view` 스킬이 들어 있습니다. `setup-view`는 저장소를 VIEW 프로젝트에 연결해, 엔지니어링 스킬이 VIEW를 이슈 트래커로 쓰게 합니다. Codex는 `plugin.json`과 `mcp.json`을, Claude Code는 `.claude-plugin/plugin.json`과 `.mcp.json`을 사용합니다. 두 클라이언트의 스킬 원본은 `skills/`에서 함께 관리합니다.
 
 설치 후 각 사용자는 자신의 회사 계정으로 VIEW에 로그인하고 접근을 허용해야 합니다. 공개 플러그인을 내려받는 것만으로 회사 데이터에 접근할 수는 없습니다. 실제로 사용할 수 있는 데이터와 동작은 VIEW의 서버 권한에 따릅니다.
 
