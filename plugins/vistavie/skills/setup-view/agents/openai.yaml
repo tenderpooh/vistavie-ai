@@ -1,0 +1,5 @@
+interface:
+  display_name: "Setup VIEW"
+  short_description: "이 저장소를 VIEW 프로젝트에 연결"
+policy:
+  allow_implicit_invocation: false
